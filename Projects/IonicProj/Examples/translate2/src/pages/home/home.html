@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-input [(ngModel)]="card.title" floating>Title</ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="card.description" floating>Description</ion-input>
+  </ion-item>
+  <button ion-button (click)="add()">Add</button>
+
+  <ion-card *ngFor="let item of arrData">
+    <ion-card-content>
+      <ion-card-title>
+        <p>{{item.title}}</p>
+      </ion-card-title>
+      <p>{{item.description}}</p>
+  </ion-card-content>
+  </ion-card>
+</ion-content>

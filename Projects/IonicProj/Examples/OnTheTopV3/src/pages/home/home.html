@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Подборки</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item>
+        <ion-input [(ngModel)]="card.title" floating>Title</ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="card.description" floating>Description</ion-input>
+      </ion-item>
+      <button ion-button (click)="add()">Add</button>
+<div class="backcolor">
+
+    <ion-card (click)="goList()" >
+      <img src="/assets/imgs/K58NvvynRVmHgj6s1L4r_.jpg"/>
+      <ion-card-content>
+        <ion-card-title>
+          БЭЛ ГУЙТС
+          </ion-card-title>
+        <p>
+          СОЗДЭТЕЛЬ МИКРОСОФТ
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+  <ion-card>
+    <img src="/assets/imgs/3XRLx7UWQEicHNprQPZn_1.jpg"/>
+    <ion-card-content>
+      <ion-card-title>
+        ПУвел ЖАРОВ
+        </ion-card-title>
+      <p>
+        гребаный олимпеадник
+        бОЖЕ УБЕЙТИ МЕНЯ
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngFor="let item of arrData">
+      <ion-card-content>
+        <ion-card-title>
+          <p>{{item.title}}</p>
+        </ion-card-title>
+        <p>{{item.description}}</p>
+    </ion-card-content>
+    </ion-card>
+    
+</div>
+</ion-content>

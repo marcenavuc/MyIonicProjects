@@ -1,0 +1,92 @@
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+#bt:active {
+  border: 3px solid white;
+}
+
+#bt:input[accept*="camera"] {
+  border: 3px solid white;
+  display: none;
+}
+
+#video {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid orangered;
+  box-shadow:3px orange;
+  display: block;
+}
+
+#photo {
+  border: 2px solid orangered;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#canvas {
+  display:none;
+}
+
+.camera {
+  width: 340px;
+  display:inline-block;
+}
+
+.output {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#startbutton {
+  display:block;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+  bottom:32px;
+  background-color: rgba(0, 150, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  font-family: "Lucida Grande", "Arial", sans-serif;
+  color: rgba(255, 255, 255, 1.0);
+}
+
+.contentarea {
+  font-size: 16px;
+  font-family: "Lucida Grande", "Arial", sans-serif;
+  width: 760px;
+}
+
+.im_button.act{
+  background:#bfbfbf;
+  
+}
+.inptext{
+  font-size:13px;
+  line-height:19px;
+  margin-left:12px;
+}
+#imulated{
+  width:60px;    
+  border:none;
+  opacity:0;
+  filter: alpha(opacity=0);
+  padding:0px;
+  margin:0px;
+  position:absolute;
+}
+.kek{
+  opacity: 0;
+  text-align: center;
+ }
+#uploadfile{
+  opacity: 0;
+  text-align: center;
+}
